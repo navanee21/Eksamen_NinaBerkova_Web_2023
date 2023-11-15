@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="grid-container">
-        <header>
+        <header id="topcontent">
             <a class="logo" href="index.html">
                 <img src="img/logo1.png" alt="Logo">
             </a>
-            <nav>
+            <nav class="navigasjon-header">
                 <ul>
                     <li><a href="index.html" aria-label="Home" class="off-site">Home</a></li>
                     <li><a href="products.html" aria-label="Portfolio" class="on-site">Portfolio</a></li>
                     <li><a href="about.html" aria-label="About" class="off-site">About</a></li>
-                    <li><a href="about.html#contact" aria-label="Contact" class="contacts">Contact</a></li>
+                    <li><a href="about.html#contact" aria-label="Contact" class="contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <figure class="top">
+                <a href="#topcontent" class="skip-link" lang="en"><i class="fa-solid fa-arrow-up fa-2x" style="color: #ffffff;"></i></a>
+            </figure>
             <h1 class="products-h1">Portfolio</h1>
             <section class="explore">
                 <h2>Explore previous jobs</h2>
@@ -59,12 +67,12 @@
         </main>
         <footer>
             <section class="bottom">
-                <a href="index.html"><img src="img/logo1.png"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="logo picture"></a>
                 <h4>Companyrights Companyname 2023</h4>
                 <div class="socials">
-                    <i>ikon</i>
-                    <i>ikon</i>
-                    <i>ikon</i>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </footer>

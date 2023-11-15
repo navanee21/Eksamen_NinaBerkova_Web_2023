@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     padding: 5px 0px;
     margin: 0;
+    padding: 0;
+    max-width: 1600px;
 }
 
 #grid-container{
@@ -10,3 +13,248 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
 }
+
+.skip-link{
+    position: fixed;
+    padding: 13px 10px;
+    background-color: #252525;
+    border-radius: 3px;
+    right: 30px;
+    bottom: 40px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigasjon-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.navigasjon-header ul li{
+    list-style: none;
+}
+
+.on-site{
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: solid;
+    border-color: #e6bd43;
+    border-width: 2px;
+    color: black;
+}
+
+.off-site{
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+}
+
+.contact{
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: black;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.contact:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+.main-index{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.video{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.video-container{
+    position: relative;
+}
+
+.main-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.main-1 h1{
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+.main-1 p{
+    width: 600px;
+    text-align: center;
+}
+
+.main-1 a{
+    text-decoration: none;
+    color: #000;
+    background-color: #e6bd43;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.main-1 a:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+.main-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-2 h2{
+    font-size: 40px;
+}
+
+.main-3{
+    background-color: #e6bd43;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-3-tekst{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.main-3-tekst a{
+    text-decoration: none;
+    color: #000;
+    border: solid;
+    font-weight: 700;
+    padding: 20px 10px;
+    width: 150px;
+}
+
+.main-3-tekst a:hover{
+    color: #e6bd43;
+    background-color: #000;
+}
+
+.branding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 18%;
+}
+
+#ourservices{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+.our-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.branding h4{
+    font-weight: 900;
+    font-size: large;
+}
+
+.fa-users, .fa-code, .fa-wifi, .fa-cloud-arrow-up{
+    font-size: 2em;
+}
+
+.sign-up h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.sign-up{
+    background-color: #a7a7a735;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.submit{
+    border: none;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 600;
+    height: 50px;
+    width: 120px;
+}
+
+.submit:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+#email{
+    border: none;
+    background-color: #ffffff;
+    height: 50px;
+    width: 220px;
+    padding-left: 10px;
+}
+
+#text{
+    display: none;
+}
+
+.fa-square-instagram, .fa-facebook,  .fa-linkedin{
+    color: white;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    color: white;
+    padding: 25px;
+}
+
+.bottom h4{
+    font-weight: 200;
+    font-size: small;
+}
+

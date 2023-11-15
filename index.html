@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -13,51 +18,58 @@
             <a class="logo" href="index.html">
                 <img src="img/logo1.png" alt="Logo">
             </a>
-            <nav>
+            <nav class="navigasjon-header">
                 <ul>
                     <li><a href="index.html" aria-label="Home" class="on-site">Home</a></li>
-                    <li><a href="products.html" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="products.html" aria-label="Portfolio" class="off-site">Portfolio</a></li>
                     <li><a href="about.html" aria-label="About" class="off-site">About</a></li>
-                    <li><a href="about.html#contact" aria-label="Contact" class="contacts">Contact</a></li>
+                    <li><a href="about.html#contact" aria-label="Contact" class="contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main-index">
             <figure class="top">
-                <a href="#topcontent" class="skip-link" lang="en">Skip to top</a>
+                <a href="#topcontent" class="skip-link" lang="en"><i class="fa-solid fa-arrow-up fa-2x" style="color: #ffffff;"></i></a>
             </figure>
-            <section class="main-1">
-                <h1 class="main-h1">Compeling headline</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="#ourservices">Read more about our services</a>
+            <section class="video-container">
+                <video autoplay loop muted class="video"><source src="img/mountains.mp4" type="video/mp4"></video>
+                <section class="main-1">
+                    <h1>Compeling headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <a href="#ourservices">Read more about our services</a>
+                </section>
             </section>
             <section class="main-2">
                 <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti.  </p>
             </section>
-            <div>
-                <img src="img/placeholder.svg" alt="Bilde">
-                <section>
+            <div class="main-3">
+                <img src="img/placeholder400x400.png" alt="Bilde">
+                <section class="main-3-tekst">
                     <h3>About our company</h3>
                     <p>Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit amet. Ultrices eros in cursus turpis. Enim facilisis gravida neque convallis a. Mi bibendum neque egestas congue quisque egestas. Orci eu lobortis elementum nibh tellus. Egestas diam in arcu cursus euismod. Purus in mollis nunc sed. Amet consectetur adipiscing elit ut aliquam purus sit.</p>
                     <a href="about.html">Read more about us</a>
                 </section>
             </div>
             <h3 id="ourservices">Our services</h3>
-            <section class="Our services">
+            <section class="our-services">
                 <section class="branding">
+                    <i class="fa-solid fa-users"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
+                    <i class="fa-solid fa-code"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
+                    <i class="fa-solid fa-wifi"></i>
                     <h4>Branding</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
@@ -69,16 +81,16 @@
                 <form>
                     <label for="email">email</label>
                     <input type="email" id="email" name="email" placeholder="nora@epost.no">
-                    <input type="submit" value="Sign me up!">
+                    <input class="submit" type="submit" value="Sign me up!">
                 </form>
             </section>
             <section class="bottom">
-                <a href="index.html"><img src="img/logo1.png"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="logo picture"></a>
                 <h4>Companyrights Companyname 2023</h4>
                 <div class="socials">
-                    <i>ikon</i>
-                    <i>ikon</i>
-                    <i>ikon</i>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </footer>
