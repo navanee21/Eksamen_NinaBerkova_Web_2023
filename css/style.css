@@ -212,6 +212,12 @@ header{
     justify-content: center;
     gap: 20px;
 }
+
+.branding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .branding h4{
     font-weight: 900;
     font-size: large;
@@ -342,7 +348,7 @@ header{
 
 /*Endrer då dei tre seksjonene som er på products sida, som flex element*/
 
-.branding, .design, .development{
+.branding-1, .design, .development{
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
@@ -476,4 +482,65 @@ header{
     background-color: #e6bd43;
     width: 10rem;
     font-weight: 600;
+}
+
+.google-maps{
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 768px){
+    #grid-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    }
+
+    header{
+        grid-column: 1/ span 1;
+        grid-row: 1/ span 1;
+    }
+
+    main{
+        grid-column: 1/ span 1;
+        grid-row: 2/ span1;
+    }
+
+    footer{
+        grid-column: 1/ span 1;
+        grid-row: 3/ span1;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigasjon-header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 25px;
+    }
+
+    .video{
+        display: none;
+    }
+
+    .video-container{
+        background-image: url(../img/workplace.jpg);
+    }
+
+    .main-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .readus{
+        text-align: center;
+    }
+
 }
