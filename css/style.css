@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 1600px;
+    height: auto;
 }
 
 #grid-container {
@@ -172,7 +173,6 @@ header{
 
 .main-3{
     background-color: #e6bd43;
-    width: 100%;
     height: auto;
     padding: 20px 0px;
     display: flex;
@@ -201,7 +201,13 @@ header{
     background-color: #000;
 }
 
-#ourservices{
+.main-3 img{
+    flex-shrink: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.ourservices{
     text-align: center;
     font-weight: 600;
     font-size: 40px;
@@ -491,8 +497,8 @@ header{
 
 @media only screen and (max-width: 768px){
     #grid-container{
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
     }
 
     header{
@@ -502,12 +508,13 @@ header{
 
     main{
         grid-column: 1/ span 1;
-        grid-row: 2/ span1;
+        grid-row: 2/ span 1;
     }
 
     footer{
+        grid-area: footer;
         grid-column: 1/ span 1;
-        grid-row: 3/ span1;
+        grid-row: 3/ span 1;
     }
 
     header{
@@ -522,6 +529,14 @@ header{
         align-items: center;
         padding: 0;
         gap: 25px;
+    }
+
+    .main-1 p{
+        width: 78.125vw;
+    }
+
+    .main-1 h1{
+        font-size: 40px;
     }
 
     .video{
@@ -539,8 +554,110 @@ header{
         text-align: center;
     }
 
+    .main-3-tekst{
+        align-items: center;
+    }
+
     .readus{
+        text-align: center ;
+    }
+
+    .our-services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourservices{
+        font-size: 30px;
+    }
+
+    .branding p{
+        width: 60%;
+    }
+
+    .main-2{
+        width: auto;
         text-align: center;
+        margin: 20px 50px;
+    }
+
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-h1{
+        width: 70%;
+    }
+    .company-name{
+        font-size: 0.9rem;
+    }
+
+    .about-h1 h1{
+        font-size: 1.5rem;
+    }
+
+    .about-h1{
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .clients{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contact-us-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .log-in-form, .information{
+        width: 80%;
+    }
+
+    .contact:hover{
+        background-color: #e6bd43;
+        color: black;
+    }
+
+    .main-1 a:hover{
+        background-color: #e6bd43;
+        color: #000;
+    }
+
+    .main-3-tekst a:hover{
+        color: #000;
+        background-color: #e6bd43;
+    }
+
+    .submit:hover{
+        background-color: #e6bd43;
+        color: #000;
+    }
+
+    .nav-explore a:hover{
+        border-color: #000;
+        background-color:white;
+        color: #000;
+    }
+
+    .branding-2 img:hover, .design-2 img:hover, .development-2 img:hover{
+        transform: scale(1);
+    }
+
+    .contact-about:hover{
+        background-color: #e6bd43;
+        color: #000;
     }
 
 }
