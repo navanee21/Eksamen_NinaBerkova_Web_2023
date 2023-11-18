@@ -11,6 +11,7 @@
     <meta property="og:description" content="Welcome to Company Name. We will make sure to satisfy ur expectations for our products and services. You can tell us ur wishes diretly by contacting us in a simple way">
     <meta property="og:image" content="img/logo1.png">
     <meta property="og:url" content="file:///Users/ninaberkova/Desktop/W/Eksamen_NinaBerkova_Web_2023/index.html">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -21,13 +22,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="grid-container">
+    <div id="grid-container" itemscope itemtype="http://schema.org/Organization">
         <header id="topcontent">
-            <a class="logo" href="index.html">
+            <a class="logo" href="index.html" itemprop="logo">
                 <img src="img/logo1.png" alt="An image of the company logo" title="Company logo">
             </a>
-            <nav class="navigasjon-header" title="Navigation for the website">
-                <ul>
+            <nav class="navigasjon-header" title="Navigation for the website" itemscope itemtype="http://schema.org/WebPage">
+                <ul itemprop="breadcrumb">
                     <li><a href="index.html" aria-label="Home" class="on-site">Home</a></li>
                     <li><a href="products.html" aria-label="Portfolio" class="off-site">Portfolio</a></li>
                     <li><a href="about.html" aria-label="About" class="off-site">About</a></li>
@@ -39,66 +40,66 @@
             <figure class="top">
                 <a href="#topcontent" class="skip-link" title="Skip to top button" lang="en"><i class="fa-solid fa-arrow-up fa-2x" style="color: #ffffff;"></i></a>
             </figure>
-            <section class="video-container">
+            <section class="video-container" itemscope itemtype="http://schema.org/WebPage">
                 <video title="A background video" autoplay loop muted class="video"><source src="img/mountains.mp4" type="video/mp4"></video>
                 <section class="main-1">
-                    <h1>Compeling headline</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <a title="Link to contact" href="about.html#ourservices">Read more about our services</a>
+                    <h1 title="Main section of the website" itemprop="headline">Compeling headline</h1>
+                    <p title="Description of main section"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <a aria-label="Link to contact" href="about.html#ourservices">Read more about our services</a>
                 </section>
             </section>
             <section class="main-2">
-                <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti.  </p>
+                <h2 title="Second section of the website">Engaging subheading. What can you help your visitors with</h2>
+                <p title="Description of the second section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti.  </p>
             </section>
-            <div class="main-3">
-                <img src="img/placeholder400x400.png" alt="About our company image">
+            <div class="main-3" title="Third section of the website" itemscope itemtype="http://schema.org/AboutPage">
+                <img src="img/placeholder400x400.png" alt="About our company image" itemprop="image">
                 <section class="main-3-tekst">
                     <h3>About our company</h3>
-                    <p>Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit amet. Ultrices eros in cursus turpis. Enim facilisis gravida neque convallis a. Mi bibendum neque egestas congue quisque egestas. Orci eu lobortis elementum nibh tellus. Egestas diam in arcu cursus euismod. Purus in mollis nunc sed. Amet consectetur adipiscing elit ut aliquam purus sit.</p>
-                    <a class="readus" title="Link to read about us" href="about.html">Read more about us</a>
+                    <p title="Description of the thirs section" itemprop="description">Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit amet. Ultrices eros in cursus turpis. Enim facilisis gravida neque convallis a. Mi bibendum neque egestas congue quisque egestas. Orci eu lobortis elementum nibh tellus. Egestas diam in arcu cursus euismod. Purus in mollis nunc sed. Amet consectetur adipiscing elit ut aliquam purus sit.</p>
+                    <a class="readus" aria-label="Link to read about us" href="about.html">Read more about us</a>
                 </section>
             </div>
-            <h3 class="ourservices">Our services</h3>
+            <h3 title="Fourth section of the website" class="ourservices">Our services</h3>
             <section class="our-services">
                 <section class="branding">
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-users"></i>
+                    <h4 itemprop="makesOffer">Branding</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-code"></i>
+                    <h4 itemprop="makesOffer">Design</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-cloud-arrow-up"></i>
+                    <h4 itemprop="makesOffer">Development</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-wifi"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-wifi"></i>
+                    <h4 itemprop="makesOffer">Support</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
             </section>
             <section class="sign-up">
-                <h2>Sign up for our newsletter</h2>
+                <h2 title="Sign up section of the website">Sign up for our newsletter</h2>
                 <form>
-                    <label for="email">email</label>
-                    <input title="Enter your mail" type="email" id="email" name="email" placeholder="nora@epost.no">
+                    <label for="email" class="email-label">email</label>
+                    <input title="Enter your mail" type="email" id="email" name="email" placeholder="nora@epost.no" aria-required="true">
                     <input title="Sign up button" class="submit" type="submit" value="Sign me up!">
                 </form>
             </section>
         </main>
         <footer>
-            <section class="bottom">
-                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo"></a>
+            <section class="bottom" title="The bottom part of the website">
+                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo" title="Company logo"></a>
                 <h4>Companyrights Companyname 2023</h4>
-                <div class="socials">
-                    <a href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="socials" itemscope itemtype="https://schema.org/Thing">
+                    <a itemprop="sameAs" href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a itemprop="sameAs" href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </footer>

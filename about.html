@@ -11,6 +11,7 @@
     <meta property="og:description" content="Get all the infortmation about Company Name here. You can simply contact us directly if there are any questions.">
     <meta property="og:image" content="img/logo1.png">
     <meta property="og:url" content="file:///Users/ninaberkova/Desktop/W/Eksamen_NinaBerkova_Web_2023/index.html">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -21,13 +22,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="grid-container">
+    <div id="grid-container" itemscope itemtype="http://schema.org/Organization">
         <header id="topcontent">
-            <a class="logo" href="index.html">
-                <img src="img/logo1.png" alt="An image of the company logo">
+            <a class="logo" href="index.html" itemprop="logo">
+                <img src="img/logo1.png" alt="An image of the company logo" title="Company logo">
             </a>
-            <nav class="navigasjon-header">
-                <ul>
+            <nav class="navigasjon-header" title="Navigation for the website" itemscope itemtype="http://schema.org/WebPage">
+                <ul itemprop="breadcrumb">
                     <li><a href="index.html" aria-label="Home" class="off-site">Home</a></li>
                     <li><a href="products.html" aria-label="Portfolio" class="off-site">Portfolio</a></li>
                     <li><a href="about.html" aria-label="About" class="on-site">About</a></li>
@@ -41,8 +42,8 @@
             </figure>
             <section class="main-about">
                 <img class="bakgrunn-about" src="img/workplace.jpg" alt="A background image of a workplace">
-                <section class="about-h1">
-                    <h2 class="company-name">Company name</h2>
+                <section class="about-h1" itemscope itemtype="http://schema.org/WebPage">
+                    <h2 class="company-name" itemprop="headline">Company name</h2>
                     <h1>About out company</h1>
                     <p>Sed risus ultricies tristique nulla aliquet enim. A arcu cursus vitae congue mauris. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Et ultrices neque ornare aenean euismod. Cursus sit amet dictum sit amet justo donec enim diam. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Viverra vitae congue eu consequat ac felis. Volutpat commodo sed egestas egestas fringilla phasellus. Vitae congue mauris rhoncus aenean vel elit scelerisque. Venenatis tellus in metus vulputate eu. Eget sit amet tellus cras adipiscing.</p>
                     <a class="contact-about" href="#contact">Get in touch with us</a>
@@ -51,24 +52,24 @@
             <h3 class="ourservices">Our services</h3>
             <section class="our-services">
                 <section class="branding">
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-users"></i>
+                    <h4 itemprop="makesOffer">Branding</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-code"></i>
+                    <h4 itemprop="makesOffer">Design</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-cloud-arrow-up"></i>
+                    <h4 itemprop="makesOffer">Development</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
                 <section class="branding">
-                    <i class="fa-solid fa-wifi"></i>
-                    <h4>Branding</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i aria-label="Icon of branding" class="fa-solid fa-wifi"></i>
+                    <h4 itemprop="makesOffer">Support</h4>
+                    <p title="Explanation of branding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </section>
             </section>
             <section class="ourclients">
@@ -84,33 +85,33 @@
                 <div class="contact-us-section">
                     <section class="log-in-form">
                         <h4>Send us a message</h4>
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Ola Nordmann" id="name">
+                        <label title="Input for name" for="name">Name</label>
+                        <input type="text" placeholder="Ola Nordmann" id="name" aria-required="true">
                         <label for="subject">Subject</label>
-                        <input type="text" placeholder="Branding" id="subject">
-                        <label for="message">Message</label>
+                        <input type="text" placeholder="Branding" id="subject" aria-required="true">
+                        <label for="message" >Message</label>
                         <input type="text" id="message">
                         <input class="send-message" type="submit" value="Send message">
                     </section>
-                    <section class="information">
+                    <section class="information" itemscope itemtype="http://schema.org/ContactPoint">
                         <h4>Contact information</h4>
                         <p>Sit amet consectetur adipiscing elit ut aliquam purus sit. Tortor pretium viverra suspendisse potenti. Duis ut diam quam nulla porttitor massa id. Vitae aliquet nec ullamcorper sit amet. Ultrices eros in cursus turpis. Enim facilisis gravida neque convallis a. Mi bibendum neque egestas congue quisque egestas. </p>
                         <p><i class="fa-solid fa-location-dot"></i> B R A Veien 4, 1757 Halden</p>
-                        <p><i class="fa-solid fa-phone"></i> 69 60 80 00</p>
-                        <p><i class="fa-solid fa-envelope"></i> postmottakar@hiof.no</p>
+                        <p itemprop="telephone"><i class="fa-solid fa-phone"></i> 69 60 80 00</p>
+                        <p itemprop="email"><i class="fa-solid fa-envelope"></i> postmottakar@hiof.no</p>
                     </section>
                 </div>
             </section>
             <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.210409329239!2d11.34978667702857!3d59.12887992704974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700169784318!5m2!1sen!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
         <footer>
-            <section class="bottom">
-                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo"></a>
+            <section class="bottom" title="The bottom part of the website">
+                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo" title="Company logo"></a>
                 <h4>Companyrights Companyname 2023</h4>
-                <div class="socials">
-                    <a href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="socials" itemscope itemtype="https://schema.org/Thing">
+                    <a itemprop="sameAs" href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a itemprop="sameAs" href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </footer>

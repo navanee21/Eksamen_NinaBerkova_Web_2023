@@ -11,6 +11,7 @@
     <meta property="og:description" content="Look at Company Name earlier high quality products here!. This portfolio will tell you about our branding, designs and development.">
     <meta property="og:image" content="img/placeholder400x400.png">
     <meta property="og:url" content="file:///Users/ninaberkova/Desktop/W/Eksamen_NinaBerkova_Web_2023/products.html">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -21,13 +22,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="grid-container">
+    <div id="grid-container" itemscope itemtype="http://schema.org/Organization">
         <header id="topcontent">
-            <a class="logo" href="index.html">
-                <img src="img/logo1.png" alt="An image of the company logo">
+            <a class="logo" href="index.html" itemprop="logo">
+                <img src="img/logo1.png" alt="An image of the company logo" title="Company logo">
             </a>
-            <nav class="navigasjon-header">
-                <ul>
+            <nav class="navigasjon-header" title="Navigation for the website" itemscope itemtype="http://schema.org/WebPage">
+                <ul itemprop="breadcrumb">
                     <li><a href="index.html" aria-label="Home" class="off-site">Home</a></li>
                     <li><a href="products.html" aria-label="Portfolio" class="on-site">Portfolio</a></li>
                     <li><a href="about.html" aria-label="About" class="off-site">About</a></li>
@@ -40,15 +41,17 @@
                 <a href="#topcontent" class="skip-link" lang="en"><i class="fa-solid fa-arrow-up fa-2x" style="color: #ffffff;"></i></a>
             </figure>
             <img class="bakgrunn-products" src="img/workplace.jpg" alt="A background image of a workplace">
-            <h1 class="products-h1">Portfolio</h1>
+            <span itemscope itemtype="http://schema.org/WebPage">
+                <h1 class="products-h1" itemprop="headline">Portfolio</h1>
+            </span>
             <h2 class="products-over">Explore previous jobs</h2>
             <nav class="nav-explore">
                 <a href="#branding">Branding</a>
                 <a href="#design">Design</a>
                 <a href="#development">Development</a>
             </nav>
-            <h2 class="products-over">Branding</h2>
-            <section class="branding-1">
+            <h2 class="products-over" itemprop="makesOffer">Branding</h2>
+            <section class="branding-1">    
                 <article class="branding-2" role="article" aria-label="Company Name branding">
                     <img src="img/placeholder400x400.png" alt="A placeholder for branding">
                     <h3>Et harum quidem</h3>
@@ -66,7 +69,7 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <h2 class="products-over">Design</h2>
+            <h2 class="products-over" itemprop="makesOffer">Design</h2>
             <section class="design">
                 <article class="design-2" role="article" aria-label="Company Name design">
                     <img src="img/placeholder400x400.png" alt="A placeholder for deisgn">
@@ -81,7 +84,7 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <h2 class="products-over">Development</h2>
+            <h2 class="products-over" itemprop="makesOffer">Development</h2>
             <section class="development">
                 <article class="development-2" role="article" aria-label="Company Name development">
                     <img src="img/placeholder400x400.png" alt="A placeholder for development">
@@ -90,13 +93,13 @@
             </section>
         </main>
         <footer>
-            <section class="bottom">
-                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo"></a>
+            <section class="bottom" title="The bottom part of the website">
+                <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo" title="Company logo"></a>
                 <h4>Companyrights Companyname 2023</h4>
-                <div class="socials">
-                    <a href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
+                <div class="socials" itemscope itemtype="https://schema.org/Thing">
+                    <a itemprop="sameAs" href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a itemprop="sameAs" href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </section>
         </footer>
