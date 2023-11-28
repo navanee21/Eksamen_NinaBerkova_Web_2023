@@ -13,17 +13,16 @@
     <meta property="og:url" content="file:///Users/ninaberkova/Desktop/W/Eksamen_NinaBerkova_Web_2023/products.html">
     <link rel="icon" type="image/x-icon" href="img/logo1.png"> <!-- korleis: https://blog.hubspot.com/website/what-is-a-favicon (Fitzgerald, 2023)-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oGNqVaZRZH76JT1zWuVx6DbixXYl9+3JL9aGq7SdTrbB+T5Z/KRFM8iJSqGYeWfkt" crossorigin="anonymous">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Products</title>
 </head>
 <body>
     <div id="grid-container" itemscope itemtype="http://schema.org/Organization">
-        <header id="topcontent">
+        <header id="topcontent"> <!--Laga kode for alle header-->
             <a class="logo" href="index.html" itemprop="logo">
                 <img src="img/logo1.png" alt="An image of the company logo" title="Company logo">
             </a>
@@ -41,16 +40,16 @@
                 <a href="#topcontent" class="skip-link" lang="en"><i class="fa-solid fa-arrow-up fa-2x" style="color: #ffffff;"></i></a>
             </figure>
             <img class="bakgrunn-products" src="img/workplace.jpg" alt="A background image of a workplace"> <!--Bilete av StartupStockPhotos fra Pixabay. (2015, 08. januar).-->
-            <span itemscope itemtype="http://schema.org/WebPage">
+            <div itemscope itemtype="http://schema.org/WebPage">
                 <h1 class="products-h1" itemprop="headline">Portfolio</h1>
-            </span>
+            </div>
             <h2 class="products-over">Explore previous jobs</h2>
             <nav class="nav-explore">
                 <a href="#branding">Branding</a>
                 <a href="#design">Design</a>
                 <a href="#development">Development</a>
             </nav>
-            <h2 class="products-over" itemprop="makesOffer">Branding</h2>
+            <h2 id="branding" class="products-over" itemprop="makesOffer">Branding</h2>
             <section class="branding-1">    
                 <article class="branding-2" role="article" aria-label="Company Name branding">
                     <img src="img/placeholder400x400.png" alt="A placeholder for branding">
@@ -69,7 +68,7 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <h2 class="products-over" itemprop="makesOffer">Design</h2>
+            <h2 id="design" class="products-over" itemprop="makesOffer">Design</h2>
             <section class="design">
                 <article class="design-2" role="article" aria-label="Company Name design">
                     <img src="img/placeholder400x400.png" alt="A placeholder for deisgn">
@@ -84,7 +83,7 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <h2 class="products-over" itemprop="makesOffer">Development</h2>
+            <h2 id="development" class="products-over" itemprop="makesOffer">Development</h2>
             <section class="development">
                 <article class="development-2" role="article" aria-label="Company Name development">
                     <img src="img/placeholder400x400.png" alt="A placeholder for development">
@@ -92,15 +91,15 @@
                 </article>
             </section>
         </main>
-        <footer>
+        <footer><!--Laga kode for alle footer-->
             <section class="bottom" title="The bottom part of the website">
                 <a href="index.html"><img src="img/logo1.png" alt="An image of the company logo" title="Company logo"></a>
                 <h4>Companyrights Companyname 2023</h4>
-                <div class="socials" itemscope itemtype="https://schema.org/Thing">
+                <span class="socials" itemscope itemtype="https://schema.org/Thing">
                     <a itemprop="sameAs" href="https://www.facebook.com/" aria-label="Our facebook-link"><i class="fa-brands fa-facebook"></i></a>
                     <a itemprop="sameAs" href="https://www.instagram.com/" aria-label="Our instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
                     <a itemprop="sameAs" href="https://www.linkedin.com/" aria-label="Our linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                </span>
             </section>
         </footer>
     </div>

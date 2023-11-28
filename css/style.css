@@ -47,6 +47,7 @@ footer{
 
 .skip-link{
     position: fixed;
+    z-index: 1; /*forsikra meg at den ligger over andre element*/
     padding: 13px 10px;
     background-color: #252525;
     border-radius: 3px; /*Kant på boksen skal ver avrunda*/
@@ -301,6 +302,7 @@ header{
 /*ny farge til sosiale medie ikoner*/
 .fa-square-instagram, .fa-facebook,  .fa-linkedin{
     color: white;
+    font-size: 1.5em;
 }
  /* bestem at ikonane skal ligge på ei rekke horisontalt*/
 .socials{
@@ -398,7 +400,7 @@ header{
 }
 /*id for dei ulike hovudtekstene til seksjonen*/
 #branding, #design, #development{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding: 15px; /* gir den rom, blant anna mellom border og teksten*/
     border-bottom: solid; /* oransj border under teksten*/
@@ -500,7 +502,10 @@ header{
     gap: 30px;
     padding-bottom: 50px; /*legger til padding slik at innhaldet har meir mellomrom under, men fargen dekka dette*/
 }
-
+/*message høgare enn dei andre*/
+#message{
+    height: 200px;
+}
 .log-in-form input{
     border: none;
     padding: 10px;
@@ -528,12 +533,14 @@ header{
 }
 /*byrja så med koden til mobil versjonen*/
 @media only screen and (max-width: 768px){ /*bestem breakpoint ved 768px*/
-    /*endrer grid på mpbil versjon*/
+    /*mykje av koden her vil vere ei enring på storleik(komenterer her i staden for kver og ein klasse) og flex-direction frå row til column.*/
+    /*eg vil og flytte mykje av innhald til å vere sentrert i sentrum av boksen sin, istaden for starten slik at alt er meir sentrert i midten*/
+    /*endrer grid på mobil versjon*/
     #grid-container{
         grid-template-columns: 1fr; /*1 kolonne*/
         grid-template-areas: "header" "main" "footer";
     }
-
+    /*definerer dei nye grid områda til header main og footer*/
     header{
         grid-column: 1/ span 1;
         grid-row: 1/ span 1;
@@ -579,14 +586,14 @@ header{
     .video-container{
         background-image: url(../img/workplace.jpg);
     }
-
+    /*fikser på oppsettet, istaden for å ha denne horisontalt vil den ligge vertikalt*/
     .main-3{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+    /*tekst og anna sentrert*/
     .main-3-tekst{
         align-items: center;
     }
@@ -664,7 +671,7 @@ header{
     .log-in-form, .information{
         width: 80%;
     }
-
+    /*for å "slå av" hover på mobil versjon, endra eg berre på hover til original utsjånad*/
     .contact:hover{
         background-color: #e6bd43;
         color: black;
