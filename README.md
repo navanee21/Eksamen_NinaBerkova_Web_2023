@@ -1,2 +1,20 @@
 # Eksamen_NinaBerkova_Web_2023
+Kopi av PDF-fil
+Ambisjonsnivå
+I denne eksamensoppgåva sikta eg hovudsakeleg for karakter A, og evt. B. Dette er fordi at eg ikkje har slite noko spesielt med faget, og føler personleg at eg har god kontroll over design av nettsider ved hjelp av grid og flexbox. Eg gjorde altså alt oppgåva spurte etter. I arbeidskrav 4 hadde eg ein ganske kompleks prototype å gå ut ifrå, slik at eg fekk øvd meg godt på flexbox, og fekk gjort css på denne eksamen nesten utan hjelpe middel. HTML-en var heller ikkje noko særleg utfordrande. Dette ga meg også bra grunnlag i arbeidskrav 5, når det gjeld mikro-data og anna tilpassingar av html-koden. Eg har heller ikkje fått noko dårlege tilbakemeldingar på disse arbeidskrava, slik at eg isåfall ikkje veit kva eg evt. gjorde feil som kunne hjulpet meg videre til denne eksamen.
+Framgang
+På F-krav var det mykje grunnleggande. Her og oppover i krava noterte eg ned nødvendig informasjon angåande filer og anna eg måtte huske på. Blant anna oppsettet på products.html og faktumet at «header» og «footer» skal ver lik på alle, som var da det første eg lagde. Disse to vart grunnleggjande til alle html-fila mine. Eg noterte også ned all nødvendig informasjon til lenkinga av nettsidene. Denne lenkinga dobbeltsjekka eg med demo-videoen for å sjå om eg tolka alt riktig. På kvart krav noterte eg ned nødvendig informasjon. Eg begynte ikkje med HTML før eg var ferdig med å lese heile oppgåva, slik at eg ikkje måte endre på mykje utifrå krava, som til dømes div-kvoten. Videoar, bilete og ikonar la eg til tideleg i prosessen. Etter dette arbeida eg med CSS-koden, utifrå kva eg anså som riktig. Eg starta meg å få på plass footer og header koden, og deretter main på alle dei tre sidene. Eg lagde nettsida responsiv, med desktop versjon som grunnlags CSS. Deretter starta eg med media query som hadde ein break-point på 768px. Til slutt la eg til diverse, som meta-data, favicon, micro-data og ulike funksjonar for å forbetre tilgjengelegheita. 
+Det var ikkje mykje eg sleit med når det gjeld sjølvet kodinga. Det var for det meste oppgåveforståelsen eg satt litt fast med på visse plassar. For eksempel, «På forsiden skal header «bildet» være en video...». Dette skulle då ver på index.html. Tidelegare fekk vi vite at header og footer skulle vere lik på alle sidene, så eg antok at detta var meint på starten av den <main>. Så visst eg misforstår og gjorde det feil, er det slik eg tenkte. Ein anna ting eg var litt usikker på var at det stod «...endringer fra mobil til desktop versjon.» i oppgåva. Denne høres litt ut som at det skal vere mobile-first, men eg antok då at det skal vere desktop, sidan den ikkje måtte vere responsiv før på c-krav. Håper ikkje det var veldig feil. 
+Kjelder:
+Juviler, J. (2023, 21. januar). How to Embed Google Map in HTML [Step-By-Step Guide]. I HubSpot. https://blog.hubspot.com/website/how-to-embed-google-map-in-html
+Juviler, J. (2022, 18. mai). How to Create a Video Background With CSS. I HubSpot. https://blog.hubspot.com/website/video-background-css
+MDN contributors.(2023, 18. july).Using ARIA: Roles, states, and properties. I mdn web docs. https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA/ARIA_Techniques
+Fitzgerald, A. (2023, 08. februar). The What, Why, & How of Making a Favicon for Your Website. I HubSpot. https://blog.hubspot.com/website/what-is-a-favicon
+Benjamin, M. (2017, 20. november). flex-grow is not working with images. I StackOverflow. https://stackoverflow.com/questions/47395307/flex-grow-is-not-working-with-images
+Riserbato, R. (2022, 23.mars). How to Use Schema Markup to Improve Your Website´s Structure. I HubSpot. https://blog.hubspot.com/marketing/schema-markup
+StartupStockPhotos. (2015, 08. januar). Pixabay. https://pixabay.com/photos/desk-laptop-notebook-pen-workspace-593327/
+ 
+Powell, K. (2018, 07.februar). CSS Positioning: Position absolute and relative explained.[Video] YouTube. 2https://www.youtube.com/watch?v=P6UgYq3J3Qs
+OpenAI. (2023). ChatGPT (26. november versjon) [Stor språkmodell]. https://chat.openai.com/
+
  
